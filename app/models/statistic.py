@@ -8,6 +8,6 @@ class Statistic(BaseModel):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     date: Mapped[date]
-    views: Mapped[int]
-    clicks: Mapped[int]
-    cost: Mapped[float]
+    views: Mapped[int] = mapped_column(default=0)
+    clicks: Mapped[int] = mapped_column(default=0)
+    cost: Mapped[float] = mapped_column(default=0.0)

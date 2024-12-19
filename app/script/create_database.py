@@ -1,6 +1,6 @@
 from app.database.engine import make_engine
 from sqlalchemy.ext.asyncio import AsyncEngine, async_sessionmaker
-from app.database.schemas import BaseModel, Statistic
+from app.models.statistic import BaseModel, Statistic
 from datetime import date
 import asyncio
 
